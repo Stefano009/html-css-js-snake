@@ -1,5 +1,5 @@
 //creo l'array di spazi che fungerà da snake
-let snake = [];
+let snake;
 let snakeLength = 6;
 
 // for (let i = 1; i <= cell; i++){
@@ -9,11 +9,15 @@ let snakeLength = 6;
 //     templateCell.innerHTML = cell;
 //     document.getElementById('campo').appendChild(templateCell);
 // }
-
+document.getElementById('start').addEventListener('click',
+    function() {
+        snakeCreation(snakeLength);
+    }
+)
 //functions
 function snakeCreation(lenght) {
     for (let i = 0; i < lenght; i++) {
-        snake[i] = `<div class = "snake-square"></div>`;
+        snake = `<div class = "snake-square">:</div>`;        
     }
     let snakeBody = document.createElement('DIV');
     snakeBody.innerHTML = snake;

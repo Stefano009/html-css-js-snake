@@ -32,3 +32,15 @@ footer .container-fluid {
     height: 100px;
     background: linear-gradient(90deg, rgba(34,195,123,1) 0%, rgba(107,152,191,1) 21%, rgba(84,8,235,1) 45%, rgba(235,254,0,1) 70%, rgba(253,104,45,1) 100%);
 }
+.snake-square {
+    width: 120px;
+    height: 20px;
+    background: linear-gradient(90deg, rgba(143,50,0,1) 0%, rgba(143,50,0,1) 65%, rgba(223,255,0,1) 100%);
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-bottom: 5px;
+    padding-right: 10px;
+    border-radius: 20px;
+}
