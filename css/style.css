@@ -25,8 +25,16 @@ h1 {
 .my-bg-snake {
     background-color: rgba(38, 148, 38, 0.8);
 }
-.snake-ground {
-    height: calc(100vh - 210px);
+main {
+    height: calc(100vh - 207px);
+    position: relative;
+}
+.snake-ground{
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 footer .container-fluid {
     height: 100px;
@@ -43,4 +51,13 @@ footer .container-fluid {
     padding-bottom: 5px;
     padding-right: 10px;
     border-radius: 20px;
+}
+.my-absolute {
+    position: absolute;
+    top: 0px;
+    left:20px;
+}
+canvas {
+    margin: 0 !important;
+    padding: 0 !important;
 }
